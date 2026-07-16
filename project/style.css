@@ -1,0 +1,456 @@
+/* ===========================
+   FEATURES SECTION
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo h2{
+    color:#6b8e23;
+    font-size:32px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#6b8e23;
+}
+
+.icons{
+    display:flex;
+    gap:25px;
+    align-items:center;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.cart{
+    position:relative;
+}
+
+#cart-count{
+    position:absolute;
+    top:-10px;
+    right:-12px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:red;
+    color:#fff;
+    font-size:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    background:#6b8e23;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#4f6d16;
+}
+.features{
+    width:100%;
+    padding:70px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    background:#ffffff;
+}
+
+.feature{
+    background:#fff;
+    text-align:center;
+    padding:35px 25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.feature:hover{
+    transform:translateY(-10px);
+}
+
+.feature i{
+    font-size:45px;
+    color:#6b8e23;
+    margin-bottom:20px;
+}
+
+.feature h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.feature p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ===========================
+   PRODUCTS
+=========================== */
+
+.products{
+    padding:80px 8%;
+    background:#f9faf9;
+}
+
+.products h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#333;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.product{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+}
+
+.product img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin-top:20px;
+    font-size:24px;
+    text-align:center;
+}
+
+.product p{
+    text-align:center;
+    font-size:22px;
+    color:#6b8e23;
+    margin:15px 0;
+    font-weight:600;
+}
+
+.cart-btn{
+    display:block;
+    margin:20px auto 30px;
+    padding:12px 35px;
+    border:none;
+    background:#6b8e23;
+    color:#fff;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cart-btn:hover{
+    background:#4f6d16;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+    background:#fff;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    color:#666;
+    line-height:2;
+    font-size:18px;
+}
+
+/* ===========================
+   REVIEWS
+=========================== */
+
+.reviews{
+    padding:80px 8%;
+    background:#f5f5f5;
+}
+
+.reviews h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.review{
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.review:hover{
+    transform:translateY(-10px);
+}
+
+.review p{
+    margin:20px 0;
+    color:#555;
+    line-height:1.8;
+}
+
+.review h4{
+    color:#6b8e23;
+}
+
+/* ===========================
+   NEWSLETTER
+=========================== */
+
+.newsletter{
+    padding:80px 8%;
+    text-align:center;
+    background:#6b8e23;
+    color:#fff;
+}
+
+.newsletter h2{
+    font-size:38px;
+}
+
+.newsletter p{
+    margin:20px 0;
+}
+
+.newsletter input{
+    width:350px;
+    max-width:90%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    margin-right:10px;
+}
+
+.newsletter button{
+    padding:15px 35px;
+    border:none;
+    background:#fff;
+    color:#6b8e23;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+    padding:80px 8%;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.contact textarea{
+    height:180px;
+    resize:none;
+}
+
+.contact button{
+    width:100%;
+    padding:15px;
+    background:#6b8e23;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.contact button:hover{
+    background:#4f6d16;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social i{
+    margin:0 12px;
+    font-size:24px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social i:hover{
+    color:#6b8e23;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.newsletter input{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.newsletter button{
+    width:100%;
+}
+
+.contact form{
+    width:100%;
+}
+
+.products h2,
+.about h2,
+.reviews h2,
+.contact h2{
+    font-size:32px;
+}
+
+}
